@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/01_Scenes/000_MainMenu.unity
+    guid: e9559416ea3017b4ba55daff134061a5
+  - enabled: 1
+    path: Assets/01_Scenes/Clock_1.unity
+    guid: ace095b211727b74492b563e448f043f
+  - enabled: 1
+    path: Assets/01_Scenes/Clock_2.unity
+    guid: 6ae3e9bca72627e4d88f765fd5437430
+  - enabled: 1
+    path: Assets/01_Scenes/Clock_3.unity
+    guid: c2e90d7a4d4f7544396cb1e4ce60d0f8
+  - enabled: 1
+    path: Assets/01_Scenes/100_1.unity
+    guid: 67e9f1348743ede44b8ca00ea717d260
+  - enabled: 1
+    path: Assets/01_Scenes/100_2.unity
+    guid: 678d34bb1a4afaf49a5d3ac8e8ee2201
+  - enabled: 1
+    path: Assets/01_Scenes/100_3.unity
+    guid: e457f6a5bc1019846afc978d885acc41
+  - enabled: 1
+    path: Assets/01_Scenes/100_4.unity
+    guid: e2461661607e7014ea9abea79a8ad5e6
+  - enabled: 1
+    path: Assets/01_Scenes/100_5.unity
+    guid: 63025cfbafc345a42b9b88820588d110
+  - enabled: 1
+    path: Assets/01_Scenes/100_6.unity
+    guid: a419dda44b619924a855dda3c49e04e2
+  - enabled: 1
+    path: Assets/01_Scenes/100_7.unity
+    guid: b389d0f7130ec1b4887b36d0c3c8451d
+  - enabled: 1
+    path: Assets/01_Scenes/NumbersLine_1.unity
+    guid: 327e965fac9ea9c469e20a0ce7409640
+  - enabled: 1
+    path: Assets/01_Scenes/NumbersLine_2.unity
+    guid: 96ae2bc3391825e4198644a9ca5989f1
+  - enabled: 1
+    path: Assets/01_Scenes/NumbersLine_3.unity
+    guid: 371c5b89a38bc5242b7e597772e4aa5d
+  - enabled: 1
+    path: Assets/01_Scenes/Ashkal_1.unity
+    guid: f162316d0fe74ea4285dec543cce0446
+  - enabled: 1
+    path: Assets/01_Scenes/Ashkal_2.unity
+    guid: b0a5d201bd3616140844657aa4fe65d3
+  - enabled: 1
+    path: Assets/01_Scenes/Ashkal_3.unity
+    guid: 95a42d0769f19cd44af71a01f0db5ed2
+  - enabled: 1
+    path: Assets/01_Scenes/Temp_1.unity
+    guid: e4c40ea8e37acf34ea5d205db92a6d6f
+  - enabled: 1
+    path: Assets/01_Scenes/Temp_2.unity
+    guid: 18a3b9e45628c894da8f5ca6ff3564d3
+  - enabled: 1
+    path: Assets/01_Scenes/Temp_3.unity
+    guid: 46cd04ca15599a04e9b50ece592634a3
+  - enabled: 1
+    path: Assets/01_Scenes/Length_1.unity
+    guid: 11d5840c869aa4648aa6b67fb729f3f4
+  - enabled: 1
+    path: Assets/01_Scenes/Length_2.unity
+    guid: e96124a6c5093944186e3ea43ca59353
+  - enabled: 1
+    path: Assets/01_Scenes/Length_3.unity
+    guid: a89fa6b5e818bca43b7f09131b206956
+  - enabled: 1
+    path: Assets/01_Scenes/Weight_1.unity
+    guid: 6aab533e0c8d3f54ba7e35ad76c35842
+  - enabled: 1
+    path: Assets/01_Scenes/Weight_2.unity
+    guid: 55b63d3629517d14e816c33a89469f69
+  - enabled: 1
+    path: Assets/01_Scenes/Weight_3.unity
+    guid: 74e5a6f96b4712d4db10c409901892a1
+  - enabled: 1
+    path: Assets/01_Scenes/DigitsCount_1.unity
+    guid: 2ae1036a494484f4fa34c3de00f7b4a1
+  - enabled: 1
+    path: Assets/01_Scenes/DigitsCount_2.unity
+    guid: 0d8df12feb8f11e4a87efd23f8da1702
+  - enabled: 1
+    path: Assets/01_Scenes/DigitsCount_3.unity
+    guid: 44978f3defccb7a49a75f759a438a36e
+  - enabled: 1
+    path: Assets/01_Scenes/DigitsCount_4.unity
+    guid: f7a06884e4e06404aa1124b0d657faf8
+  m_configObjects: {}
