@@ -3603,10 +3603,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQuitting: 0
   isTesting: 0
-  intervalInSeconds: 50
-  appID: ca-app-pub-6698936327720111~6264182299
-  bannerID: ca-app-pub-6698936327720111/6375844420
-  interstitialID: ca-app-pub-6698936327720111/5445906132
+  intervalInSeconds: 30
+  appIDAndroid: ca-app-pub-4764361699042236~4236591238
+  appIDIOS: ca-app-pub-4764361699042236~9493341590
+  bannerID: ca-app-pub-4764361699042236/5801147869
+  interstitialID: ca-app-pub-4764361699042236/7090178803
+  bannerIDIOS: ca-app-pub-4764361699042236/5070595448
+  interstitialIDIOS: ca-app-pub-4764361699042236/1131350430
 --- !u!114 &7743968512591346070
 MonoBehaviour:
   m_ObjectHideFlags: 0

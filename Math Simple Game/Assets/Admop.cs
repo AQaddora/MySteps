@@ -19,14 +19,17 @@ public class Admop : MonoBehaviour
 	public InterstitialAd interstitial;
 
 	[Header("App ID")]
-	[SerializeField]
-	private string appID = "";
-
+	[SerializeField] private string appIDAndroid = "";
+	[SerializeField] private string appIDIOS = "";
 	[Space]
-	[Header("AdUnits")]
+	[Header("AdUnits Android")]
 	[SerializeField] private string bannerID = "";
 	[SerializeField] private string interstitialID = "";
 
+	[Space]
+	[Header("AdUnits iOS")]
+	[SerializeField] private string bannerIDIOS = "";
+	[SerializeField] private string interstitialIDIOS = "";
 	void Start()
 	{
 
@@ -41,20 +44,20 @@ public class Admop : MonoBehaviour
 		{
 			Destroy(this);
 		}
+
+		string appID = "";
 #if UNITY_ANDROID
-		string appId = appID;
+		appID = appIDAndroid;
 #elif UNITY_IPHONE
-		string appId = "";
+		appID = appIDIOS;
 #else
-		string appId = "unexpected_platform";
+		appID = "unexpected_platform";
 #endif
 
 		// Initialize the Google Mobile Ads SDK.
 		MobileAds.Initialize(appID);
 		//RequestBanner();
 		RequestInterstitial();
-
-		//ShowBanner();
 	}
 	TimeSpan tsOld;
 	public void showInterstitial()
@@ -71,15 +74,15 @@ public class Admop : MonoBehaviour
 
 	private void RequestBanner()
 	{
-		string _bannerID = bannerID;
 #if UNITY_ANDROID
-		string adUnitId = _bannerID;
+		string adUnitId = bannerID;
 #elif UNITY_IPHONE
-			string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+		string adUnitId = bannerIDIOS;
 #else
-			string adUnitId = "unexpected_platform";
+		string adUnitId = "unexpected_platform";
 #endif
 		if (isTesting) adUnitId = "ca-app-pub-3940256099942544/6300978111";
+		
 		bannerView = new BannerView(adUnitId, new AdSize(AdSize.FullWidth, 20), AdPosition.Top);
 
 		// Called when an ad request has successfully loaded.
@@ -135,9 +138,9 @@ public class Admop : MonoBehaviour
 #if UNITY_ANDROID
 		string adUnitId = interstitialID;
 #elif UNITY_IPHONE
-			string adUnitId = "ca-app-pub-3940256099942544/4411468910";
+		string adUnitId = interstitialID;
 #else
-			string adUnitId = "unexpected_platform";
+		string adUnitId = "unexpected_platform";
 #endif
 		if (isTesting) adUnitId = "ca-app-pub-3940256099942544/8691691433";
 		// Initialize an InterstitialAd.
