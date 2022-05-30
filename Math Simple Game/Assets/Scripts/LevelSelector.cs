@@ -47,13 +47,13 @@ public class LevelSelector : MonoBehaviour
 
 	public void HomeButton()
 	{
-		if(Admop.Instance != null) Admop.Instance.showInterstitial();
+		if(Admop.Instance != null) Admop.Instance.ShowInterstitial();
 		AudioManager.Instance.EndAnimationsAndVoice();
 		SceneManager.LoadScene(0);
 	}
 	public void LoadNextLevel()
 	{
-		if (Admop.Instance != null) Admop.Instance.showInterstitial();
+		if (Admop.Instance != null) Admop.Instance.ShowInterstitial();
 		int next = SceneManager.GetActiveScene().buildIndex + 1;
 		if (!IsSameCatagory(next))
 			next = 0;
@@ -64,7 +64,7 @@ public class LevelSelector : MonoBehaviour
 
 	public void LoadPreviousLevel()
 	{
-		if (Admop.Instance != null) Admop.Instance.showInterstitial();
+		if (Admop.Instance != null) Admop.Instance.ShowInterstitial();
 		int pre = SceneManager.GetActiveScene().buildIndex - 1;
 		if (!IsSameCatagory(pre))
 			pre = 0;

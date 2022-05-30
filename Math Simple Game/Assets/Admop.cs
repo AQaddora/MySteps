@@ -54,13 +54,13 @@ public class Admop : MonoBehaviour
 		appID = "unexpected_platform";
 #endif
 
-		// Initialize the Google Mobile Ads SDK.
-		MobileAds.Initialize(appID);
-		//RequestBanner();
-		RequestInterstitial();
+        // Initialize the Google Mobile Ads SDK.
+        MobileAds.Initialize (initStatus => { });
+        RequestBanner();
+        RequestInterstitial ();
 	}
 	TimeSpan tsOld;
-	public void showInterstitial()
+	public void ShowInterstitial()
 	{
 		TimeSpan tsNow = TimeSpan.FromTicks(DateTime.Now.Ticks);
 		double totalSeconds = tsNow.TotalSeconds - tsOld.TotalSeconds;
@@ -83,7 +83,7 @@ public class Admop : MonoBehaviour
 #endif
 		if (isTesting) adUnitId = "ca-app-pub-3940256099942544/6300978111";
 		
-		bannerView = new BannerView(adUnitId, new AdSize(AdSize.FullWidth, 20), AdPosition.Top);
+		bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Top);
 
 		// Called when an ad request has successfully loaded.
 		bannerView.OnAdLoaded += HandleOnbannerViewLoaded;
@@ -93,12 +93,8 @@ public class Admop : MonoBehaviour
 		bannerView.OnAdOpening += HandleOnbannerOpened;
 		// Called when the user returned from the app after an ad click.
 		bannerView.OnAdClosed += HandleOnbannerClosed;
-		// Called when the ad click caused the user to leave the application.
-		bannerView.OnAdLeavingApplication += HandleOnbannerLeavingApplication;
-
 		// Create an empty ad request.
 		AdRequest request = new AdRequest.Builder().Build();
-
 		// Load the banner with the request.
 		bannerView.LoadAd(request);
 	}
@@ -155,11 +151,6 @@ public class Admop : MonoBehaviour
 		interstitial.OnAdOpening += HandleinterstitialAdOpened;
 		// Called when the ad is closed.
 		interstitial.OnAdClosed += HandleinterstitialAdClosed;
-		// Called when the ad click caused the user to leave the application.
-		interstitial.OnAdLeavingApplication += HandleinterstitialAdLeavingApplication;
-
-
-
 		// Create an empty ad request.
 		AdRequest request = new AdRequest.Builder().Build();
 		// Load the interstitial with the request.
